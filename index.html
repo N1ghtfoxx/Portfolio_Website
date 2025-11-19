@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein GameDesign Portfolio</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header>
+        <h1>GameDesign Portfolio</h1>
+        <nav>
+            <a href="#home">Start</a>
+            <a href="#ueber-mich">Über mich</a>
+            <a href="#projekte">Projekte</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Hallo, ich bin...</h2>
+        <img src="profilbild.jpg" alt="Mein Profilbild" class="profile-image">
+        <p>Was ich mache...</p>
+        <button id="projekte-button">Meine Projekte ansehen</button>
+    </section>
+
+    <section id="ueber-mich">
+        <h2>Über mich</h2>
+        <p>Info Text über mich</p>
+
+        <h3>Meine Fähigkeiten</h3>
+        <div class="skills-liste">
+            <span class="skill">HTML/CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Unity C#</span>
+            <span class="skill">SQL</span>
+            <span class="skill">PHP</span>
+            <span class="skill">Blender</span>
+            <span class="skill">3D-Modellierung</span>
+            <span class="skill">UI/UX</span>
+        </div>
+    </section>
+
+
+    <section id="projekte">
+        <h2>Meine Projekte</h2>
+
+        <article class="projekt">
+            <div class="projekt-info">
+                <h3>Nostal Games</h3>
+                <p>Beschreibung</p>
+                <p class="technologien">Erstellt mit: HTML/CSS</p>
+                <button class="projekt-button">Mehr erfahren</button>
+            </div>
+            <img src="./media/img/NostalGames.png" alt="Nostal Games Screenshot" class="projekt-bild">
+        </article>
+
+        <article class="projekt">
+            <div class="projekt-info">
+                <h3>Witchcat</h3>
+                <p>Beschreibung</p>
+                <p class="technologien">Erstellt mit: HTML/CSS, JavaScript</p>
+                <button class="projekt-button">Mehr erfahren</button>
+            </div>
+            <img src="./media/img/Witchcat_StartScreen.png" alt="Witchcat Screenshot" class="projekt-bild">
+        </article>
+
+        <article class="projekt">
+            <div class="projekt-info">
+                <h3>Dungeon Maze</h3>
+                <p>Beschreibung</p>
+                <p class="technologien">Erstellt mit: Unity, C#, Blender, Substance 3D Painter</p>
+                <button class="projekt-button">Mehr erfahren</button>
+            </div>
+            <img src="./media/img/Dungeon_Maze.png" alt="Dungeon Maze Screenshot" class="projekt-bild">
+        </article>
+
+        <article class="projekt">
+            <div class="projekt-info">
+                <h3>Astro Jump</h3>
+                <p>Beschreibung</p>
+                <p class="technologien">Erstellt mit: Unity, C#</p>
+                <button class="projekt-button">Mehr erfahren</button>
+            </div>
+            <img src="./media/img/BattlePlanet_fertig.png" alt="Astro Jump Screenshot" class="projekt-bild">
+        </article>
+
+        <article class="projekt">
+            <div class="projekt-info">
+                <h3>Weitere Projekte</h3>
+                <p>Beschreibung</p>
+                <p class="technologien">Erstellt mit: Blender, Substance 3D Painter, Adobe Illustrator</p>
+                <a href="./pages/bildergalerie_weitereProjekte.html" class="projekt-button">Mehr erfahren</a>
+            </div>
+            <img src="blender.jpg" alt="Blender Screenshot" class="projekt-bild">
+        </article>
+    </section>
+
+    <!--<section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Hast du Fragen oder möchtest mit mir zusammenarbeiten? Schreib mir eine Nachricht!</p>
+
+        <form id="kontakt-formular">
+            <input type="text" placeholder="Dein Name" required>
+            <input type="email" placeholder="Deine E-Mail" required>
+            <textarea placeholder="Deine Nachricht" rows="5" required></textarea>
+            <button type="submit">Nachricht senden</button>
+        </form>
+    </section>-->
+
+    <footer>
+        <div class="social-links">
+            <a href="#">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <p>E-Mail: xyz</p>
+        </div>
+        <p>&copy; 2025 Mein Portfolio</p>
+    </footer>
+
+    <script src="/script/script.js"></script>
+</body>
+</html>

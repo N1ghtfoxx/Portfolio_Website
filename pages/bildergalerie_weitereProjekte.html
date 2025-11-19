@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bildergalerie - GameDesign Portfolio</title>
+    <link rel="stylesheet" href="../style/bildergalerie.css">
+</head>
+<body>
+    <header>
+        <h1>Bildergalerie</h1>
+        <nav>
+            <a href="../index.html">Zurück zum Portfolio</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Weitere Projekte</h2>
+
+        <div class="gallery">
+            <div class="gallery-item" onclick="openLightbox(0)">
+                <img src="../media/img/Illustrator_Project.png" alt="Nostal Games">
+                <div class="gallery-item-title">Game Background</div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(1)">
+                <img src="../media/img/Carousel.png" alt="Carousel At Night">
+                <div class="gallery-item-title">Carousel At Night</div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(2)">
+                <img src="../media/img/TreasureChest.png" alt="Chest">
+                <div class="gallery-item-title">Dungeon Maze Asset - Chest</div>
+            </div>
+
+            <div class="gallery-item" onclick="openLightbox(3)">
+                <img src="../media/img/Ham.png" alt="Ham">
+                <div class="gallery-item-title">Dungeon Maze Asset - Ham</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+        <div class="lightbox-content">
+            <button class="lightbox-close" onclick="closeLightbox(event)">×</button>
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-title" id="lightbox-title"></div>
+        </div>
+    </div>
+    <script src="../script/bildergalerie.js"></script>
+</body>
+</html>
