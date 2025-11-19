@@ -255,38 +255,213 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
-    header {
-        padding: 15px;
+/* Media Queries for Responsive Design --------------------------------------------------------------------------------------------------------------------- */
+
+/* Extra Small Devices (Smartphones im Hochformat, < 576px) */
+@media (max-width: 575px) {
+    h1 {
+        font-size: 22px;
     }
 
     nav a {
-        display: block;
-        margin: 10px 0;
+        font-size: 16px;
+        margin: 0 8px;
+        padding: 4px 8px;
     }
 
-    section {
-        padding: 100px 15px 40px;
+    .container {
+        padding: 15px;
+        margin: 20px auto;
     }
-
-    #home {
-        padding-top: 150px;
-    }
-
-        #home h2 {
-            font-size: 28px;
-        }
 
     h2 {
+        font-size: 24px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .gallery-item img {
+        height: 180px;
+    }
+
+    .gallery-item-title {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .lightbox-content img {
+        max-width: 95%;
+    }
+
+    .lightbox-close {
+        top: 5px;
+        right: 5px;
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+
+    .lightbox-title {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+/* Small Devices (Smartphones im Querformat, 576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    nav a {
+        margin: 0 10px;
+        font-size: 17px;
+    }
+
+    .container {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 15px;
+    }
+
+    .gallery-item img {
+        height: 190px;
+    }
+
+    .lightbox-close {
+        top: 8px;
+        right: 8px;
+        width: 38px;
+        height: 38px;
+        font-size: 22px;
+    }
+}
+
+/* Medium Devices (Tablets, 768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .container {
+        max-width: 750px;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 18px;
+    }
+
+    .gallery-item img {
+        height: 220px;
+    }
+
+    .lightbox-close {
+        top: -45px;
+        width: 45px;
+        height: 45px;
         font-size: 26px;
     }
 
-    .projekt {
-        flex-direction: column;
+    .lightbox-title {
+        bottom: -45px;
+        font-size: 17px;
+    }
+}
+
+/* Large Devices (Desktops, 992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 960px;
     }
 
-    .projekt-bild {
-        width: 100%;
-        height: auto;
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .gallery-item img {
+        height: 240px;
+    }
+}
+
+/* Extra Large Devices (Große Desktops, 1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .container {
+        max-width: 1140px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 22px;
+    }
+
+    .gallery-item img {
+        height: 260px;
+    }
+}
+
+/* Extra Extra Large Devices (Sehr große Bildschirme, ≥ 1400px) */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 25px;
+    }
+
+    .gallery-item img {
+        height: 280px;
+    }
+
+    .gallery-item-title {
+        font-size: 17px;
+    }
+
+    .lightbox-content img {
+        max-width: 50em;
+    }
+}
+
+/* Landscape Orientation für kleine Geräte */
+@media (max-height: 500px) and (orientation: landscape) {
+    header {
+        padding: 10px;
+    }
+
+    .container {
+        margin: 80px auto 20px;
+    }
+
+    .gallery-item img {
+        height: 150px;
+    }
+
+    .lightbox-close {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
+    .lightbox-title {
+        position: fixed;
+        bottom: 10px;
+    }
+
+    .lightbox-content {
+        max-height: 80%;
     }
 }

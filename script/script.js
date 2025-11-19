@@ -1,6 +1,4 @@
-// Einfacher JavaScript-Code für Interaktionen
-
-// Navigation - Smooth Scroll
+// Nav - Smooth Scroll
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -12,8 +10,19 @@ document.querySelectorAll('nav a').forEach(link => {
         });
     });
 });
+// Footer - Smooth Scroll back up
+document.getElementById('seitenanfang').addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href');
+    const targetSection = document.querySelector(targetId);
+    window.scrollTo({
+        top: targetSection.offsetTop - 80,
+        behavior: 'smooth'
+    });
+});
 
-// Button zum Anzeigen der Projekte
+
+// Button for "Projekte" Section
 document.getElementById('projekte-button').addEventListener('click', function () {
     document.getElementById('projekte').scrollIntoView({
         behavior: 'smooth'
@@ -28,14 +37,14 @@ document.querySelectorAll('.projekt-button').forEach(button => {
     });
 });
 
-//// Formular-Absenden
+//// formular submission
 //document.getElementById('kontakt-formular').addEventListener('submit', function (e) {
 //    e.preventDefault();
 //    alert('Vielen Dank für deine Nachricht! Ich melde mich bald bei dir.');
 //    this.reset();
 //});
 
-// Einfache Animation beim Scrollen
+// simple Fade-In Animation on Scroll
 window.addEventListener('scroll', function () {
     const sections = document.querySelectorAll('section');
     const windowHeight = window.innerHeight;
