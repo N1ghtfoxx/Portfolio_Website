@@ -122,10 +122,10 @@ h2 {
 }
 
     .lightbox-content img {
-        width: 100%;
-        max-width: 41em;
-        height: 100%;
-        object-fit: contain;
+        width: 700px;
+        /*max-width: 41em;*/
+        height:470px;
+        object-fit: cover;
         border-radius: 10px;
         box-shadow: 0 0 50px rgba(106, 137, 204, 0.5);
     }
